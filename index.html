@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>太阳系行星距离模拟器</title>
+    <meta charset="utf-8" />
+    
+    <!-- 引入 Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+    
+    <!-- 引入 Leaflet JavaScript -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>
+
+    <!-- 引入自定义样式和脚本 -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>太阳系行星距离模拟器</h1>
+    <button id="clearPoints" class="clear-button">清除所有点</button>
+    <div class="planet-control-panel">
+        <h3>显示/隐藏天体</h3>
+        <div class="planet-checkbox-container">
+            <div class="select-all-container">
+                <label>
+                    <input type="checkbox" id="selectAll" checked>
+                    全选/取消全选
+                </label>
+            </div>
+            <label>
+                <input type="checkbox" class="planet-checkbox" data-planet="水星" checked>
+                水星
+            </label>
+            <label>
+                <input type="checkbox" class="planet-checkbox" data-planet="金星" checked>
+                金星
+            </label>
+            <label>
+                <input type="checkbox" class="planet-checkbox" data-planet="火星" checked>
+                火星
+            </label>
+            <label>
+                <input type="checkbox" class="planet-checkbox" data-planet="木星" checked>
+                木星
+            </label>
+            <label>
+                <input type="checkbox" class="planet-checkbox" data-planet="土星" checked>
+                土星
+            </label>
+            <label>
+                <input type="checkbox" class="planet-checkbox" data-planet="天王星" checked>
+                天王星
+            </label>
+            <label>
+                <input type="checkbox" class="planet-checkbox" data-planet="海王星" checked>
+                海王星
+            </label>
+        </div>
+    </div>
+    <div id="map"></div>
+    <div id="distance" class="distance-info"></div>
+
+    <!-- 引入自定义脚本 -->
+    <script src="script.js"></script>
+</body>
+</html> 
